@@ -5,9 +5,16 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Post</title>
+    <title>{{ $post->title }}</title>
 </head>
 <body>
-<h1>Post: <?= $post ?></h1>
+
+<div><h1>{{ $post->title }}</h1></div>
+<div>By {{ $post->author }} / {{ $post->date->diffForHumans() }}</div>
+
+<div>
+    {{ $post->contents }}
+</div>
+
 </body>
 </html>

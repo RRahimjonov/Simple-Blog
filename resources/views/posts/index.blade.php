@@ -10,11 +10,11 @@
 <body>
   <h2>My personal posts</h2>
   @if($posts->count())
-      <?= $posts ?>
       <ul>
           @foreach($posts as $post)
               <li>
-                  <a href="/posts/{{$post->slug}}">{{$post->slug}}</a>
+                  <a href="/posts/{{$post->slug}}">{{$post->title}}</a>
+                  <p>{{ $post->excerpt }}</p>
               </li>
           @endforeach
       </ul>
