@@ -14,7 +14,7 @@ filter qilish, meta tag qo'shish va meta taglar bo'yicha filter qilish amalda qo
 ## O'rganilgan narsalar:
  - Markdown fayllardan ma'lumot yuklash
  - Spatie\Sheets bilan ishlash
- - Markdownlar fayllarga meta data qo'shis
+ - Markdownlar fayllarga meta data qo'shish
  - sodda filter logikalar
  - abort_if()
  - diffForHumans() <i>vaqtni chop etishni Carbon usuli misol: <b>1 day ago, 3 weeks ago</b></i>
