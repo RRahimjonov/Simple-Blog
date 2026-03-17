@@ -9,12 +9,13 @@
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
     <title>My personal blog</title>
+    @vite('resources/css/app.css')
 
 </head>
-<body>
-<h1>My  personal blog</h1>
-<div>
-    @yield('content')
+<body class="layout">
+<h1 class="layout__title">My  personal blog</h1>
+<div class="layout__content">
+    {{ $slot }}
 </div>
 </body>
 </html>

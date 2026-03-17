@@ -1,11 +1,9 @@
-@extends('app-layout')
+<x-app-layout>
+    <div class="post-header"><h1 class="post-title">{{ $post->title }}</h1></div>
 
-@section('content')
-    <div><h1>{{ $post->title }}</h1></div>
+    <div class="post-meta">By {{ $post->author }} / {{ $post->date->diffForHumans() }}</div>
 
-    <div>By {{ $post->author }} / {{ $post->date->diffForHumans() }}</div>
-
-    <div>
+    <div class="post-body">
         {{ $post->contents }}
     </div>
-@endsection
+</x-app-layout>
