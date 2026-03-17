@@ -8,3 +8,17 @@
 </p>
 
 ## App haqida
+Bu kichik laravel blog app bu yerda postlarni markdown fayllarga saqlas,h ulardan yuklash, authorlar bo'yicha
+filter qilish, meta tag qo'shish va meta taglar bo'yicha filter qilish amalda qo'lladim
+
+## O'rganilgan narsalar:
+ - Markdown fayllardan ma'lumot yuklash
+ - Spatie\Sheets bilan ishlash
+ - Markdownlar fayllarga meta data qo'shis
+ - sodda filter logikalar
+ - abort_if()
+ - diffForHumans() <i>vaqtni chop etishni Carbon usuli misol: <b>1 day ago, 3 weeks ago</b></i>
+ - Layout yaratishni eski usuli: yield, section extends, content
+ - Layout yaratishni yangi usuli: <x-component/> + {{$slot}}
+ - raw function <b>fn()</b> 
+

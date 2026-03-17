@@ -1,6 +1,11 @@
 <x-app-layout>
     <div class="page-title">Posts</div>
       @if($posts->count())
-          <x-post-list :posts="$posts" />
+        <ul class="post-list">
+            @foreach($posts as $post)
+                <x-post-list :post="$post" />
+            @endforeach
+        </ul>
       @endif
 </x-app-layout>
+

@@ -1,7 +1,7 @@
 <x-app-layout>
       @if($posts->count())
           <ul class="post-list">
-              <h1>Latest posts by {{ $authorName }}</h1>
+              <h1>Tagged by {{ $tag }}</h1>
               @foreach($posts as $post)
                   <x-post-list :post="$post" />
               @endforeach
