@@ -100,6 +100,9 @@ a:hover {
     color: #64748b;
     margin-top: 0.5rem;
 }
+.post-meta > a{
+    color: #4e4eed;
+}
 
 .post-header {
     margin-bottom: 0.75rem;

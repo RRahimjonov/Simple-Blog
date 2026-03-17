@@ -13,7 +13,7 @@
 
 </head>
 <body class="layout">
-<h1 class="layout__title">My  personal blog</h1>
+<h1 class="layout__title"><a href="/">My  personal blog</a></h1>
 <div class="layout__content">
     {{ $slot }}
 </div>
